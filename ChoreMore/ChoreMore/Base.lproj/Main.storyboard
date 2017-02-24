@@ -630,6 +630,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Item" id="bFQ-in-Pwu">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ymU-7o-ras">
+                            <connections>
+                                <segue destination="2Up-bx-2vH" kind="unwind" unwindAction="unwindToWishListWithSegue:" id="PGX-BM-PPw"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="i7b-MZ-uN9">
                             <connections>
                                 <action selector="didTapDoneButton:" destination="0HM-E1-pj4" id="aN7-Sk-ehD"/>
@@ -643,6 +648,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEJ-g6-3G0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2Up-bx-2vH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5780" y="-1388.4557721139431"/>
         </scene>

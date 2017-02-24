@@ -14,7 +14,6 @@ class WishListViewController: UIViewController, UITableViewDataSource, UITableVi
     var wishList: [String]?
     
     @IBOutlet weak var wishListTableView: UITableView!
-    @IBOutlet weak var addWishlistItemButton: UIButton!
     
     override func viewDidLoad() {
         self.wishList = ["Playstation", "Visit Luna Park"]
@@ -40,9 +39,8 @@ class WishListViewController: UIViewController, UITableViewDataSource, UITableVi
         return wishListCell
     }
     
-    @IBAction func unwindToParentChoreList(segue: UIStoryboardSegue) {
+    @IBAction func unwindToWishList(segue: UIStoryboardSegue) {
         
     }
-
     
 }
