@@ -11,6 +11,7 @@ import UIKit
 
 class WishListViewController: UIViewController {
 
+    @IBOutlet weak var wishListTableView: UITableView!
     @IBOutlet weak var addWishlistItemButton: UIButton!
     
     override func viewDidLoad() {

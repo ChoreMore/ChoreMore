@@ -1,0 +1,9 @@
+platform :ios, '10.0'
+
+target 'ChoreMore' do
+  use_frameworks!
+
+  # Pods for ChoreMore
+
+  pod 'Alamofire', '~> 4.3'
+end
