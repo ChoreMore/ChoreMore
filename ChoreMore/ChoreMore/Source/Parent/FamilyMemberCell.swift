@@ -11,4 +11,5 @@ import UIKit
 
 class FamilyMemberCell : UITableViewCell {
     @IBOutlet weak var childNameLabel: UILabel!
+    @IBOutlet weak var accountNumberLabel: UILabel!
 }

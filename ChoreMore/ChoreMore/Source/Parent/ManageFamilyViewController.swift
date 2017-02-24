@@ -13,10 +13,12 @@ class ManageFamilyViewController : UIViewController, UITableViewDataSource, UITa
     override func viewDidLoad() {
         self.familyMembers = [
             [
-                "name" : "Hadi"
+                "name" : "Hadi",
+                "accountNumber" : "12345"
             ],
             [
-                "name" : "Kamal"
+                "name" : "Kamal",
+                "accountNumber" : "67890"
             ]
         ]
     }
@@ -37,6 +39,7 @@ class ManageFamilyViewController : UIViewController, UITableViewDataSource, UITa
         }
         
         childCell.childNameLabel.text = chore["name"]
+        childCell.accountNumberLabel.text = "Account number: \(chore["accountNumber"]!)"
         
         return childCell
     }
