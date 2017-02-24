@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -238,7 +238,7 @@
         <!--Kid Login-->
         <scene sceneID="wrl-fB-2Uj">
             <objects>
-                <viewController title="Kid Login" id="CVd-1o-uPy" sceneMemberID="viewController">
+                <viewController title="Kid Login" id="CVd-1o-uPy" customClass="LoginViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hjX-mc-dKh"/>
                         <viewControllerLayoutGuide type="bottom" id="8cz-nw-z41"/>
@@ -297,7 +297,7 @@
         <!--Chores-->
         <scene sceneID="pm3-OG-AbQ">
             <objects>
-                <viewController title="Chores" id="Ipz-FV-zcD" sceneMemberID="viewController">
+                <viewController title="Chores" id="Ipz-FV-zcD" customClass="ChoreListViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y6y-hj-H1B"/>
                         <viewControllerLayoutGuide type="bottom" id="YeR-Ec-6Bk"/>
@@ -311,7 +311,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="choreCell" id="n5w-kN-v0T">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="choreCell" id="n5w-kN-v0T" customClass="ChoreTableViewCell" customModule="ChoreMore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n5w-kN-v0T" id="V7w-zQ-v22">
@@ -326,14 +326,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmi-tf-WL4">
-                                                    <rect key="frame" x="229" y="11" width="29" height="21"/>
+                                                    <rect key="frame" x="177" y="11" width="29" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAs-x5-L2a">
-                                                    <rect key="frame" x="272" y="11" width="57" height="21"/>
+                                                    <rect key="frame" x="228" y="11" width="57" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -341,6 +341,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="choreNameLabel" destination="TLx-fB-Ehi" id="6Zc-Ib-QWG"/>
+                                            <outlet property="choreStatusLabel" destination="aAs-x5-L2a" id="RcO-kb-8ZD"/>
+                                            <outlet property="choreValueLabel" destination="zmi-tf-WL4" id="7RZ-oY-Fbh"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rqr-vY-fhv">
                                         <rect key="frame" x="0.0" y="72" width="343" height="44"/>
@@ -380,7 +385,7 @@
         <!--Add Wishlist Item-->
         <scene sceneID="Rce-2X-JS2">
             <objects>
-                <viewController title="Add Wishlist Item" id="0HM-E1-pj4" sceneMemberID="viewController">
+                <viewController title="Add Wishlist Item" id="0HM-E1-pj4" customClass="WishListItemDetailViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8bl-bw-vUg"/>
                         <viewControllerLayoutGuide type="bottom" id="byh-at-aAa"/>
@@ -411,6 +416,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="itemCostTextField" destination="au5-kA-jk9" id="X8l-cd-v26"/>
+                        <outlet property="itemNameTextField" destination="gSP-gX-FES" id="j8H-13-ejd"/>
+                        <outlet property="selectImageButton" destination="tlU-OG-Gc2" id="EDp-Og-D5s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEJ-g6-3G0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -454,7 +464,7 @@
         <!--Wishlist-->
         <scene sceneID="0QR-PL-evI">
             <objects>
-                <viewController title="Wishlist" id="qum-43-Up8" sceneMemberID="viewController">
+                <viewController title="Wishlist" id="qum-43-Up8" customClass="WishListViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HZm-Ao-yuJ"/>
                         <viewControllerLayoutGuide type="bottom" id="zeK-gt-KqW"/>
@@ -468,7 +478,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="sq0-nL-RHO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="sq0-nL-RHO" customClass="WishlistTableViewCell" customModule="ChoreMore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sq0-nL-RHO" id="iXe-sZ-d9S">
@@ -491,6 +501,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemCostLabel" destination="q8G-Bq-J2j" id="1Ma-vm-hjr"/>
+                                            <outlet property="itemNameLabel" destination="DHJ-DM-l2q" id="VFD-QO-9Qa"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -512,7 +526,7 @@
         <!--Join Family-->
         <scene sceneID="eaD-eb-QJc">
             <objects>
-                <viewController title="Join Family" id="V6F-LT-mDu" sceneMemberID="viewController">
+                <viewController title="Join Family" id="V6F-LT-mDu" customClass="JoinFamilyViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c0d-eK-knQ"/>
                         <viewControllerLayoutGuide type="bottom" id="ZdM-Nu-STA"/>
@@ -546,6 +560,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="familyCodeTextField" destination="PHe-J1-Ywe" id="cVS-qt-6yM"/>
+                        <outlet property="joinFamilyButton" destination="Zpp-cN-uhO" id="eJx-jn-88b"/>
+                        <outlet property="kidCodeTextField" destination="I2N-mL-jMi" id="vTU-X4-9Gq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CrN-s9-5su" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
