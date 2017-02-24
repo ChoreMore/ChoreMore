@@ -7,5 +7,7 @@ import Foundation
 import UIKit
 
 class ChoreListViewController : UIViewController {
+    
+    @IBOutlet weak var choresTableView: UITableView!
 
 }

@@ -475,6 +475,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="9UH-ku-lrz"/>
+                    <connections>
+                        <outlet property="choresTableView" destination="arB-H1-ZoM" id="bmi-Rf-LP7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vub-vc-ssn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -619,6 +622,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="wishListTableView" destination="65m-Vg-Lgw" id="QJm-I1-Dqy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z1K-91-7gh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
