@@ -15,11 +15,10 @@ class ChoreTableViewCell: UITableViewCell {
     @IBOutlet weak var choreStatusLabel: UILabel!
     @IBOutlet weak var choreActionButton: UIButton!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBAction func didTapChoreActionButton(_ sender: Any) {
+        
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

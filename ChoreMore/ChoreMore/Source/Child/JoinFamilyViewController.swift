@@ -12,4 +12,8 @@ class JoinFamilyViewController : UIViewController {
     @IBOutlet weak var kidCodeTextField: UITextField!
     @IBOutlet weak var joinFamilyButton: UIButton!
     
+    @IBAction func didTapJoinFamilyButton(_ sender: Any) {
+        
+    }
+    
 }
