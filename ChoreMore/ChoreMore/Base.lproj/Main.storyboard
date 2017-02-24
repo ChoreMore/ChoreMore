@@ -477,10 +477,10 @@
             </objects>
             <point key="canvasLocation" x="3166" y="-2094"/>
         </scene>
-        <!--Chores-->
+        <!--Kids Chores-->
         <scene sceneID="pm3-OG-AbQ">
             <objects>
-                <viewController title="Chores" id="Ipz-FV-zcD" customClass="ChoreListViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Kids Chores" id="Ipz-FV-zcD" customClass="ChoreListViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y6y-hj-H1B"/>
                         <viewControllerLayoutGuide type="bottom" id="YeR-Ec-6Bk"/>
@@ -494,16 +494,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="choreCell" rowHeight="73" id="n5w-kN-v0T" customClass="ChoreTableViewCell" customModule="ChoreMore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="73"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="choreCell" rowHeight="60" id="n5w-kN-v0T" customClass="ChoreTableViewCell" customModule="ChoreMore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n5w-kN-v0T" id="V7w-zQ-v22">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chore Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLx-fB-Ehi">
-                                                    <rect key="frame" x="39" y="29" width="147" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chore Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLx-fB-Ehi">
+                                                    <rect key="frame" x="24" y="16" width="96" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -516,14 +515,19 @@
                                                         <action selector="didTapChoreActionButton:" destination="n5w-kN-v0T" eventType="touchUpInside" id="Pwx-dq-FKi"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmi-tf-WL4">
-                                                    <rect key="frame" x="67" y="51" width="29" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmi-tf-WL4">
+                                                    <rect key="frame" x="32" y="37" width="19" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TLx-fB-Ehi" firstAttribute="top" secondItem="V7w-zQ-v22" secondAttribute="topMargin" constant="8" id="LP0-ck-qSh"/>
+                                                <constraint firstItem="zmi-tf-WL4" firstAttribute="leading" secondItem="V7w-zQ-v22" secondAttribute="leadingMargin" constant="24" id="Npi-HD-Ort"/>
+                                                <constraint firstItem="TLx-fB-Ehi" firstAttribute="leading" secondItem="V7w-zQ-v22" secondAttribute="leadingMargin" constant="16" id="g40-yr-LBl"/>
+                                                <constraint firstItem="zmi-tf-WL4" firstAttribute="top" secondItem="TLx-fB-Ehi" secondAttribute="bottom" id="hgS-9q-rup"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="choreActionButton" destination="mdU-uL-gWG" id="vss-RR-elF"/>
@@ -573,6 +577,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="9UH-ku-lrz"/>
                     <connections>
+                        <outlet property="childBalanceLabel" destination="q7Q-kH-J7Q" id="Z0v-xi-IyK"/>
+                        <outlet property="childNameLabel" destination="VwE-5o-YAd" id="evg-u7-A7F"/>
+                        <outlet property="choreTotalAvailableLabel" destination="hpK-kz-QoE" id="2dG-RR-Muu"/>
                         <outlet property="choresTableView" destination="arB-H1-ZoM" id="bmi-Rf-LP7"/>
                     </connections>
                 </viewController>
