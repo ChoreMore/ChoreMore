@@ -8,4 +8,11 @@ import UIKit
 
 class LoginViewController : UIViewController {
 
+  @IBOutlet weak var username: UITextField!
+  @IBOutlet weak var password: UITextField!
+
+  @IBAction func login(_ sender: Any) {
+
+  }
+
 }
