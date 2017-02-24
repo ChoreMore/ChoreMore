@@ -458,7 +458,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="KVV-XN-8kl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.6470588235294118" green="0.83921568627450982" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="RkE-Ei-Lft" kind="relationship" relationship="viewControllers" id="xlI-Qc-i7a"/>

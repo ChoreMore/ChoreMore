@@ -16,6 +16,9 @@ class CoolTabBarController : UITabBarController {
         tabFrame.size.height = 60
         tabFrame.origin.y = self.view.frame.size.height - 60
         self.tabBar.frame = tabFrame
+        
+        
+        self.tabBar.unselectedItemTintColor = UIColor(colorLiteralRed: 165.0/255, green: 214.0/255, blue: 167.0/255, alpha: 1)
     }
     
 }
