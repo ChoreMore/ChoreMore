@@ -39,7 +39,7 @@ class ChoreListViewController : UIViewController, UITableViewDataSource, UITable
         return choreCell
     }
     
-    @IBAction func unwindToParentChoreList(segue: UIStoryboardSegue) {
+    @IBAction func unwindToKidChoreList(segue: UIStoryboardSegue) {
         
     }
 
