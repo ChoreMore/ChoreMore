@@ -10,6 +10,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="WawaSC-Regular.otf">
+            <string>DFWaWaSC-W5</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -59,30 +64,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36Q-kV-SuB">
+                                <rect key="frame" x="0.0" y="20" width="375" height="411.5"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.62745098039215685" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jYt-Iv-2pg">
-                                <rect key="frame" x="16" y="28" width="343" height="242"/>
+                                <rect key="frame" x="16" y="28" width="343" height="393.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-RT-XWt">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="cYa-H7-4HD"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ChoreMore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQf-qF-rSd">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="78.5"/>
+                                        <fontDescription key="fontDescription" name="DFWaWaSC-W5" family="Wawati SC" pointSize="56"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kids Edition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81G-Kz-v7f">
+                                        <rect key="frame" x="0.0" y="86.5" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" name="DFWaWaSC-W5" family="Wawati SC" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_app" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-RT-XWt">
+                                        <rect key="frame" x="0.0" y="139.5" width="343" height="126"/>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cx8-O7-LhQ">
-                                        <rect key="frame" x="0.0" y="136" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="273.5" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zI3-3L-bN7">
-                                        <rect key="frame" x="0.0" y="174" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="311.5" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQs-PI-OqR">
-                                        <rect key="frame" x="0.0" y="212" width="343" height="30"/>
-                                        <state key="normal" title="Login"/>
+                                        <rect key="frame" x="0.0" y="349.5" width="343" height="44"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.23137254900000001" green="0.62745098040000002" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="login:" destination="Esy-23-w3k" eventType="touchUpInside" id="vcY-5e-ufL"/>
                                             <segue destination="9Ad-6R-f5g" kind="show" id="ZJ4-C4-gIz"/>
@@ -90,21 +112,21 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lc8-so-dVf">
-                                <rect key="frame" x="237" y="585" width="122" height="62"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="aDr-gu-Wym"/>
-                                    <constraint firstAttribute="width" constant="122" id="dQ4-JC-oFn"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_nab" translatesAutoresizingMaskIntoConstraints="NO" id="lc8-so-dVf">
+                                <rect key="frame" x="257" y="555" width="102" height="92"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="leading" secondItem="36Q-kV-SuB" secondAttribute="leading" id="24m-fc-1j4"/>
                             <constraint firstItem="lc8-so-dVf" firstAttribute="trailing" secondItem="Cmg-OO-xFV" secondAttribute="trailingMargin" id="398-pu-Nmd"/>
                             <constraint firstItem="jYt-Iv-2pg" firstAttribute="top" secondItem="m1R-tV-KuA" secondAttribute="bottom" constant="8" id="A2l-Qz-KZA"/>
+                            <constraint firstItem="36Q-kV-SuB" firstAttribute="top" secondItem="m1R-tV-KuA" secondAttribute="bottom" id="OI5-Pc-inN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jYt-Iv-2pg" secondAttribute="trailing" id="Vm9-iE-3H0"/>
+                            <constraint firstAttribute="trailing" secondItem="36Q-kV-SuB" secondAttribute="trailing" id="cV4-sI-bXI"/>
                             <constraint firstItem="qGv-Ao-ynm" firstAttribute="top" secondItem="lc8-so-dVf" secondAttribute="bottom" constant="20" id="fBC-v5-KcC"/>
                             <constraint firstItem="jYt-Iv-2pg" firstAttribute="leading" secondItem="Cmg-OO-xFV" secondAttribute="leadingMargin" id="iV0-wi-KZR"/>
+                            <constraint firstItem="36Q-kV-SuB" firstAttribute="bottom" secondItem="jYt-Iv-2pg" secondAttribute="bottom" constant="10" id="rVx-ZF-Oku"/>
                         </constraints>
                     </view>
                     <connections>
@@ -923,5 +945,7 @@
         <image name="ic_family" width="61" height="43"/>
         <image name="ic_thumbs_down" width="38" height="35"/>
         <image name="ic_thumbs_up" width="38" height="35"/>
+        <image name="logo_app" width="126" height="126"/>
+        <image name="logo_nab" width="102" height="92"/>
     </resources>
 </document>

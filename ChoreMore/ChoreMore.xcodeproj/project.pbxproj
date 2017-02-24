@@ -27,6 +27,7 @@
 		E12CE9621E5FCA2C008D1A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12CE9601E5FCA2C008D1A1D /* LaunchScreen.storyboard */; };
 		E12CE96A1E600222008D1A1D /* FamilyMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CE9691E600222008D1A1D /* FamilyMemberCell.swift */; };
 		E17BE17C1E604A930089B4AD /* CoolTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17BE17B1E604A930089B4AD /* CoolTabBar.swift */; };
+		E17BE17F1E605D550089B4AD /* WawaSC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E17BE1791E6044240089B4AD /* WawaSC-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -234,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17BE17F1E605D550089B4AD /* WawaSC-Regular.otf in Resources */,
 				E12CE9621E5FCA2C008D1A1D /* LaunchScreen.storyboard in Resources */,
 				E12CE95F1E5FCA2C008D1A1D /* Assets.xcassets in Resources */,
 				E12CE95D1E5FCA2C008D1A1D /* Main.storyboard in Resources */,
