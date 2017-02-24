@@ -161,7 +161,7 @@
         <!--Add Child-->
         <scene sceneID="BTO-vy-7Bl">
             <objects>
-                <viewController id="BEN-oc-CMW" sceneMemberID="viewController">
+                <viewController id="BEN-oc-CMW" customClass="FamilyMemberDetailViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bHF-gx-X4l"/>
                         <viewControllerLayoutGuide type="bottom" id="Gb8-my-k06"/>
@@ -171,9 +171,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Child" id="cWZ-UF-HAr"/>
+                    <navigationItem key="navigationItem" title="Add Child" id="cWZ-UF-HAr">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="wI6-Nd-ocF">
+                            <connections>
+                                <segue destination="fAf-Kx-Kxm" kind="unwind" unwindAction="unwindToManageFamilyWithSegue:" id="p0d-3i-JyF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5N-6v-SOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fAf-Kx-Kxm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5268" y="202"/>
         </scene>
@@ -194,7 +201,7 @@
             </objects>
             <point key="canvasLocation" x="2716" y="-562"/>
         </scene>
-        <!--Item 1-->
+        <!--Chores-->
         <scene sceneID="0U1-AZ-drf">
             <objects>
                 <viewController id="h7D-8i-vGV" customClass="ParentChoreListViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
@@ -220,7 +227,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="hO9-rD-uOl"/>
-                    <navigationItem key="navigationItem" id="1to-iP-cjH">
+                    <navigationItem key="navigationItem" title="Chores" id="1to-iP-cjH">
                         <barButtonItem key="rightBarButtonItem" title="+" id="kw4-tF-oEK">
                             <connections>
                                 <segue destination="ZMq-VA-tgi" kind="presentation" id="TDF-1W-1Mu"/>
@@ -251,7 +258,7 @@
         <!--Add Chore-->
         <scene sceneID="NIw-Mb-Nsi">
             <objects>
-                <viewController id="WVH-uP-o2I" sceneMemberID="viewController">
+                <viewController id="WVH-uP-o2I" customClass="ChoreDetailViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4aU-3y-PF2"/>
                         <viewControllerLayoutGuide type="bottom" id="zrQ-Z7-3Is"/>
@@ -261,9 +268,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Chore" id="kLv-oY-2dl"/>
+                    <navigationItem key="navigationItem" title="Add Chore" id="kLv-oY-2dl">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="c9e-Xa-Zh0">
+                            <connections>
+                                <segue destination="UeY-r7-DJb" kind="unwind" unwindAction="unwindToParentChoreListWithSegue:" id="r1u-5P-fgZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JRT-bq-ZPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="UeY-r7-DJb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5175" y="-564"/>
         </scene>
