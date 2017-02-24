@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="-1330" y="-795"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Ymk-YN-ofF">
             <objects>
-                <viewController id="Esy-23-w3k" sceneMemberID="viewController">
+                <viewController id="Esy-23-w3k" customClass="LoginViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m1R-tV-KuA"/>
                         <viewControllerLayoutGuide type="bottom" id="qGv-Ao-ynm"/>
@@ -87,11 +87,11 @@
             </objects>
             <point key="canvasLocation" x="46" y="-562"/>
         </scene>
-        <!--Item-->
+        <!--Family-->
         <scene sceneID="Bnb-ud-vb9">
             <objects>
                 <navigationController id="kmU-WM-cJG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Bxf-cU-VqC"/>
+                    <tabBarItem key="tabBarItem" title="Family" id="Bxf-cU-VqC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JEG-hP-0jd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -107,7 +107,7 @@
         <!--Item 2-->
         <scene sceneID="3En-QK-3mT">
             <objects>
-                <viewController id="4qR-D4-pU7" sceneMemberID="viewController">
+                <viewController id="4qR-D4-pU7" customClass="ManageFamilyViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zg4-ue-gMo"/>
                         <viewControllerLayoutGuide type="bottom" id="oxg-Xp-6AQ"/>
@@ -136,11 +136,11 @@
             </objects>
             <point key="canvasLocation" x="3617" y="202"/>
         </scene>
-        <!--Item-->
+        <!--Chores-->
         <scene sceneID="DJg-6O-jh9">
             <objects>
                 <navigationController id="RkE-Ei-Lft" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lLJ-hr-JcN"/>
+                    <tabBarItem key="tabBarItem" title="Chores" id="lLJ-hr-JcN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eig-rh-vAM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -156,7 +156,7 @@
         <!--Item 1-->
         <scene sceneID="0U1-AZ-drf">
             <objects>
-                <viewController id="h7D-8i-vGV" sceneMemberID="viewController">
+                <viewController id="h7D-8i-vGV" customClass="ParentChoreListViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aGf-Pk-ljh"/>
                         <viewControllerLayoutGuide type="bottom" id="G2j-d8-PX6"/>
