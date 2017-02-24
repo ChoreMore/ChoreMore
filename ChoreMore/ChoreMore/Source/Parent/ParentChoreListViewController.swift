@@ -8,4 +8,8 @@ import UIKit
 
 class ParentChoreListViewController : UIViewController {
 
+    @IBAction func unwindToParentChoreList(segue: UIStoryboardSegue) {
+
+    }
+
 }

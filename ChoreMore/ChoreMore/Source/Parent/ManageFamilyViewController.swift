@@ -8,4 +8,8 @@ import UIKit
 
 class ManageFamilyViewController : UIViewController {
 
+    @IBAction func unwindToManageFamily(segue: UIStoryboardSegue) {
+
+    }
+
 }
