@@ -5,15 +5,18 @@
 
 import Foundation
 import UIKit
-import Alamofire
 
 class LoginViewController : UIViewController {
 
   @IBOutlet weak var username: UITextField!
   @IBOutlet weak var password: UITextField!
 
-  @IBAction func login(_ sender: Any) {
+  private var apiManager: APIManager?
 
+  @IBAction func login(_ sender: Any) {
+    apiManager = APIManager()
+    apiManager?.login { state in
+    }
   }
 
 }

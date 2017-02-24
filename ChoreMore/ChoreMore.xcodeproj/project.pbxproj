@@ -11,6 +11,7 @@
 		220C8CE41E5FE89E00E153CF /* WishListItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8CE31E5FE89E00E153CF /* WishListItemDetailViewController.swift */; };
 		220C8CE61E5FEB2600E153CF /* ChoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8CE51E5FEB2600E153CF /* ChoreTableViewCell.swift */; };
 		220C8CE81E5FEB4D00E153CF /* WishlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8CE71E5FEB4D00E153CF /* WishlistTableViewCell.swift */; };
+		27A12C031E5FFAC00086E473 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A12C021E5FFAC00086E473 /* APIManager.swift */; };
 		40CFE04289619687A6DFF546 /* FamilyMemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE08D93AF99BA67A5860C /* FamilyMemberDetailViewController.swift */; };
 		40CFE130DE6856F74A9EC460 /* ChoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE6D1E4155C1D63E2F517 /* ChoreListViewController.swift */; };
 		40CFE4A8853099B583543413 /* ParentChoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE9372B6C93CFEE576B0E /* ParentChoreListViewController.swift */; };
@@ -32,6 +33,7 @@
 		220C8CE31E5FE89E00E153CF /* WishListItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListItemDetailViewController.swift; sourceTree = "<group>"; };
 		220C8CE51E5FEB2600E153CF /* ChoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoreTableViewCell.swift; path = ../Child/ChoreTableViewCell.swift; sourceTree = "<group>"; };
 		220C8CE71E5FEB4D00E153CF /* WishlistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistTableViewCell.swift; sourceTree = "<group>"; };
+		27A12C021E5FFAC00086E473 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		40CFE08D93AF99BA67A5860C /* FamilyMemberDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyMemberDetailViewController.swift; sourceTree = "<group>"; };
 		40CFE4C8E9A6EE681A97D749 /* JoinFamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinFamilyViewController.swift; sourceTree = "<group>"; };
 		40CFE61AE41FBBEC79108C88 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				220C8CE51E5FEB2600E153CF /* ChoreTableViewCell.swift */,
 				40CFE61AE41FBBEC79108C88 /* LoginViewController.swift */,
+				27A12C021E5FFAC00086E473 /* APIManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				220C8CE61E5FEB2600E153CF /* ChoreTableViewCell.swift in Sources */,
 				40CFE84D7C363E538AF461C4 /* LoginViewController.swift in Sources */,
 				40CFE94DD409604294620749 /* JoinFamilyViewController.swift in Sources */,
+				27A12C031E5FFAC00086E473 /* APIManager.swift in Sources */,
 				40CFE130DE6856F74A9EC460 /* ChoreListViewController.swift in Sources */,
 				40CFE4A8853099B583543413 /* ParentChoreListViewController.swift in Sources */,
 				40CFEA80FB252B2EB53CBC87 /* ChoreDetailViewController.swift in Sources */,
