@@ -297,25 +297,48 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bsz-jj-MrN">
-                                                    <rect key="frame" x="8" y="8" width="359" height="78"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="50"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S6P-IA-MDt">
-                                                            <rect key="frame" x="0.0" y="0.0" width="78" height="78"/>
+                                                        <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zm3-vZ-tbn">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="50"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin_list" translatesAutoresizingMaskIntoConstraints="NO" id="S6P-IA-MDt">
+                                                                    <rect key="frame" x="0.0" y="1" width="48" height="48"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="S6P-IA-MDt" secondAttribute="height" multiplier="1:1" id="ZP0-c5-wbI"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jE0-Rs-2A8">
+                                                                    <rect key="frame" x="15.5" y="14.5" width="17.5" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" secondItem="S6P-IA-MDt" secondAttribute="height" multiplier="1:1" id="ZP0-c5-wbI"/>
+                                                                <constraint firstItem="jE0-Rs-2A8" firstAttribute="centerX" secondItem="zm3-vZ-tbn" secondAttribute="centerX" id="DBI-dL-6oL"/>
+                                                                <constraint firstItem="S6P-IA-MDt" firstAttribute="centerY" secondItem="zm3-vZ-tbn" secondAttribute="centerY" constant="1" id="M6q-7d-gfc"/>
+                                                                <constraint firstItem="S6P-IA-MDt" firstAttribute="leading" secondItem="zm3-vZ-tbn" secondAttribute="leading" id="R62-rF-ygp"/>
+                                                                <constraint firstItem="S6P-IA-MDt" firstAttribute="centerY" secondItem="zm3-vZ-tbn" secondAttribute="centerY" id="cX0-wH-2sY"/>
+                                                                <constraint firstAttribute="trailing" secondItem="S6P-IA-MDt" secondAttribute="trailing" id="d5H-Vs-lUd"/>
+                                                                <constraint firstAttribute="width" constant="48" id="gN3-CG-oFE"/>
+                                                                <constraint firstAttribute="height" constant="48" id="noV-nZ-nYv"/>
+                                                                <constraint firstItem="S6P-IA-MDt" firstAttribute="centerX" secondItem="zm3-vZ-tbn" secondAttribute="centerX" id="wHl-K8-1mF"/>
+                                                                <constraint firstItem="jE0-Rs-2A8" firstAttribute="centerY" secondItem="zm3-vZ-tbn" secondAttribute="centerY" id="wfy-Ff-jtH"/>
                                                             </constraints>
-                                                        </imageView>
+                                                        </view>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GFK-Yb-TYW">
-                                                            <rect key="frame" x="86" y="0.0" width="197" height="78"/>
+                                                            <rect key="frame" x="56" y="0.0" width="227" height="50"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="adsfdsafdsafdsf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqz-O6-wEv">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="197" height="57.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="227" height="29.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjL-eN-Nyz">
-                                                                    <rect key="frame" x="0.0" y="57.5" width="197" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="29.5" width="227" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -323,11 +346,11 @@
                                                             </subviews>
                                                         </stackView>
                                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpz-Qa-aPD">
-                                                            <rect key="frame" x="291" y="0.0" width="30" height="78"/>
+                                                            <rect key="frame" x="291" y="0.0" width="30" height="50"/>
                                                             <state key="normal" title="X"/>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lH-kV-wZt">
-                                                            <rect key="frame" x="329" y="0.0" width="30" height="78"/>
+                                                            <rect key="frame" x="329" y="0.0" width="30" height="50"/>
                                                             <state key="normal" title="Y"/>
                                                         </button>
                                                     </subviews>
@@ -866,4 +889,7 @@
             <point key="canvasLocation" x="4840.8000000000002" y="-1388.4557721139431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coin_list" width="52" height="52"/>
+    </resources>
 </document>
