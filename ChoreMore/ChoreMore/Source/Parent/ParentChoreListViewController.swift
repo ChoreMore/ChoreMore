@@ -11,20 +11,42 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
     @IBOutlet weak var tableView: UITableView!
     
     var choreList: [[String:String]]?
+    let apiManager = APIManager()
 
     override func viewDidLoad() {
-        self.choreList = [
-            [
-                "name" : "Clean dishes",
-                "childName" : "Hadi",
-                "amount" : "4$"
-            ],
-            [
-                "name" : "Make bed",
-                "childName" : "Kamal",
-                "amount" : "2$"
-            ]
-        ]
+//        self.choreList = [
+//            [
+//                "name" : "Clean dishes",
+//                "childName" : "Hadi",
+//                "amount" : "$4"
+//            ],
+//            [
+//                "name" : "Make bed",
+//                "childName" : "Kamal",
+//                "amount" : "$2"
+//            ]
+//        ]
+        
+
+        createChoreModel()
+    }
+    
+    func createChoreModel() {
+        apiManager.chores { (choresResponse) in
+            self.choreList = choresResponse.map({
+                let value = ($0["value"] as! Float)
+                
+                return [
+                    "name" : $0["description"] as! String,
+                    "childName" : "Hadi",
+                    "amount" : "$\(value)"
+                ]
+            })
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
