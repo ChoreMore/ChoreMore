@@ -11,6 +11,7 @@ import UIKit
 class ChoreTableViewCell: UITableViewCell {
 
     @IBOutlet weak var choreNameLabel: UILabel!
+    @IBOutlet weak var choreChildNameLabel: UILabel!
     @IBOutlet weak var choreValueLabel: UILabel!
     @IBOutlet weak var choreStatusLabel: UILabel!
     @IBOutlet weak var choreActionButton: UIButton!

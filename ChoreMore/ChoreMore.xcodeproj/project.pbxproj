@@ -29,7 +29,7 @@
 /* Begin PBXFileReference section */
 		220C8CE11E5FE86000E153CF /* WishListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
 		220C8CE31E5FE89E00E153CF /* WishListItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListItemDetailViewController.swift; sourceTree = "<group>"; };
-		220C8CE51E5FEB2600E153CF /* ChoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoreTableViewCell.swift; sourceTree = "<group>"; };
+		220C8CE51E5FEB2600E153CF /* ChoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoreTableViewCell.swift; path = ../Child/ChoreTableViewCell.swift; sourceTree = "<group>"; };
 		220C8CE71E5FEB4D00E153CF /* WishlistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistTableViewCell.swift; sourceTree = "<group>"; };
 		40CFE08D93AF99BA67A5860C /* FamilyMemberDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyMemberDetailViewController.swift; sourceTree = "<group>"; };
 		40CFE4C8E9A6EE681A97D749 /* JoinFamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinFamilyViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +80,6 @@
 				40CFE4C8E9A6EE681A97D749 /* JoinFamilyViewController.swift */,
 				220C8CE71E5FEB4D00E153CF /* WishlistTableViewCell.swift */,
 				40CFE6D1E4155C1D63E2F517 /* ChoreListViewController.swift */,
-				220C8CE51E5FEB2600E153CF /* ChoreTableViewCell.swift */,
 				220C8CE11E5FE86000E153CF /* WishListViewController.swift */,
 				220C8CE31E5FE89E00E153CF /* WishListItemDetailViewController.swift */,
 			);
@@ -90,6 +89,7 @@
 		40CFEBD5079B5B5B6AF73217 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				220C8CE51E5FEB2600E153CF /* ChoreTableViewCell.swift */,
 				40CFE61AE41FBBEC79108C88 /* LoginViewController.swift */,
 			);
 			path = Common;
