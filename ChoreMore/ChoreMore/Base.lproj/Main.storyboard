@@ -358,10 +358,16 @@
                                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpz-Qa-aPD">
                                                             <rect key="frame" x="275" y="0.0" width="38" height="50"/>
                                                             <state key="normal" image="ic_thumbs_down"/>
+                                                            <connections>
+                                                                <action selector="didTapReject:" destination="u30-4c-2Qq" eventType="primaryActionTriggered" id="PDP-xE-Amk"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lH-kV-wZt">
                                                             <rect key="frame" x="321" y="0.0" width="38" height="50"/>
                                                             <state key="normal" image="ic_thumbs_up"/>
+                                                            <connections>
+                                                                <action selector="didTapAccept:" destination="u30-4c-2Qq" eventType="primaryActionTriggered" id="O7m-J3-thR"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -404,6 +410,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="3dG-nb-kNY" id="y6w-BW-gwK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xcw-uc-wuk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
