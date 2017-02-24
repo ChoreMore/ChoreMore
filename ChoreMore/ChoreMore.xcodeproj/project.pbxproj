@@ -24,6 +24,7 @@
 		E12CE95D1E5FCA2C008D1A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12CE95B1E5FCA2C008D1A1D /* Main.storyboard */; };
 		E12CE95F1E5FCA2C008D1A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12CE95E1E5FCA2C008D1A1D /* Assets.xcassets */; };
 		E12CE9621E5FCA2C008D1A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12CE9601E5FCA2C008D1A1D /* LaunchScreen.storyboard */; };
+		E12CE96A1E600222008D1A1D /* FamilyMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CE9691E600222008D1A1D /* FamilyMemberCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		E12CE95E1E5FCA2C008D1A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E12CE9611E5FCA2C008D1A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E12CE9631E5FCA2C008D1A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12CE9691E600222008D1A1D /* FamilyMemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyMemberCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				40CFEAF5178957B9BC8B9650 /* ChoreDetailViewController.swift */,
 				40CFEBDC8BB1BB81B4AA8246 /* ManageFamilyViewController.swift */,
 				40CFE08D93AF99BA67A5860C /* FamilyMemberDetailViewController.swift */,
+				E12CE9691E600222008D1A1D /* FamilyMemberCell.swift */,
 			);
 			path = Parent;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40CFEB6D051A10A8B6BCF035 /* ViewController.swift in Sources */,
+				E12CE96A1E600222008D1A1D /* FamilyMemberCell.swift in Sources */,
 				220C8CE21E5FE86000E153CF /* WishListViewController.swift in Sources */,
 				40CFE55A69DE433AFCE8D459 /* AppDelegate.swift in Sources */,
 				220C8CE61E5FEB2600E153CF /* ChoreTableViewCell.swift in Sources */,
