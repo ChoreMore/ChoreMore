@@ -28,6 +28,7 @@
 		E12CE96A1E600222008D1A1D /* FamilyMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CE9691E600222008D1A1D /* FamilyMemberCell.swift */; };
 		E17BE17C1E604A930089B4AD /* CoolTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17BE17B1E604A930089B4AD /* CoolTabBar.swift */; };
 		E17BE17F1E605D550089B4AD /* WawaSC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E17BE1791E6044240089B4AD /* WawaSC-Regular.otf */; };
+		E17BE1811E6065590089B4AD /* CoolSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17BE1801E6065590089B4AD /* CoolSegues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		E12CE9691E600222008D1A1D /* FamilyMemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyMemberCell.swift; sourceTree = "<group>"; };
 		E17BE1791E6044240089B4AD /* WawaSC-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WawaSC-Regular.otf"; sourceTree = "<group>"; };
 		E17BE17B1E604A930089B4AD /* CoolTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolTabBar.swift; sourceTree = "<group>"; };
+		E17BE1801E6065590089B4AD /* CoolSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolSegues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				E17BE17B1E604A930089B4AD /* CoolTabBar.swift */,
+				E17BE1801E6065590089B4AD /* CoolSegues.swift */,
 			);
 			name = Random;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				220C8CE61E5FEB2600E153CF /* ChoreTableViewCell.swift in Sources */,
 				40CFE84D7C363E538AF461C4 /* LoginViewController.swift in Sources */,
 				40CFE94DD409604294620749 /* JoinFamilyViewController.swift in Sources */,
+				E17BE1811E6065590089B4AD /* CoolSegues.swift in Sources */,
 				27A12C031E5FFAC00086E473 /* APIManager.swift in Sources */,
 				40CFE130DE6856F74A9EC460 /* ChoreListViewController.swift in Sources */,
 				40CFE4A8853099B583543413 /* ParentChoreListViewController.swift in Sources */,
