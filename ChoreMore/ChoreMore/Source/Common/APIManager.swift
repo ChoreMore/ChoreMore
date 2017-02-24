@@ -101,5 +101,14 @@ class APIManager {
       }
     }
   }
+    
+    func chores(completion: @escaping ([[String: Any]]) -> ()) {
+        Alamofire.request("https://choremore.herokuapp.com/chores.json").responseJSON { response in
+            if let json = response.result.value as? [[String: Any]] {
+                completion(json)
+            }
+        }
+    }
 
+    
 }
