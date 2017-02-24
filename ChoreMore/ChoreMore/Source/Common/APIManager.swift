@@ -82,4 +82,24 @@ class APIManager {
     }
   }
 
+  func accountDetails(_ completion: @escaping ([String: Any]) -> ()) {
+    login { [weak self] success in
+      if success {
+        self?.sessionManager?.request("https://hackathon.api.extnp.nab.com.au/v2/accounts?v=1&category=domestic").responseJSON { response in
+          if let json = response.result.value as? [String: Any] {
+            completion(json)
+          }
+        }
+      }
+    }
+  }
+
+  func accountBalance(accountToken: String, completion: @escaping ([String: Any]) -> ()) {
+    sessionManager?.request("https://hackathon.api.extnp.nab.com.au/v2/account/\(accountToken)/balance?v=1").responseJSON { response in
+      if let json = response.result.value as? [String: Any] {
+        completion(json)
+      }
+    }
+  }
+
 }
