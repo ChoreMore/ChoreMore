@@ -116,12 +116,12 @@
             </objects>
             <point key="canvasLocation" x="45.600000000000001" y="-562.66866566716647"/>
         </scene>
-        <!--Family-->
+        <!--Navigation Controller-->
         <scene sceneID="Bnb-ud-vb9">
             <objects>
                 <navigationController id="kmU-WM-cJG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Family" id="Bxf-cU-VqC"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JEG-hP-0jd">
+                    <tabBarItem key="tabBarItem" title="" image="ic_family" id="Bxf-cU-VqC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="JEG-hP-0jd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -218,7 +218,7 @@
         <scene sceneID="NxS-XL-ffq">
             <objects>
                 <navigationController id="fur-47-nzg" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Alv-Eg-uTs">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Alv-Eg-uTs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -256,11 +256,11 @@
             </objects>
             <point key="canvasLocation" x="5268" y="202"/>
         </scene>
-        <!--Chores-->
+        <!--Navigation Controller-->
         <scene sceneID="DJg-6O-jh9">
             <objects>
                 <navigationController id="RkE-Ei-Lft" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Chores" id="lLJ-hr-JcN"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_broom" id="lLJ-hr-JcN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Eig-rh-vAM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -300,8 +300,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDN-Ys-oGB">
+                                                    <rect key="frame" x="8" y="65" width="359" height="1"/>
+                                                    <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="deviceRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="saz-IE-FoC"/>
+                                                    </constraints>
+                                                </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bsz-jj-MrN">
-                                                    <rect key="frame" x="8" y="8" width="359" height="50"/>
+                                                    <rect key="frame" x="8" y="12" width="359" height="50"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zm3-vZ-tbn">
                                                             <rect key="frame" x="0.0" y="0.0" width="48" height="50"/>
@@ -319,7 +326,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstItem="jE0-Rs-2A8" firstAttribute="centerX" secondItem="zm3-vZ-tbn" secondAttribute="centerX" id="DBI-dL-6oL"/>
                                                                 <constraint firstItem="S6P-IA-MDt" firstAttribute="leading" secondItem="zm3-vZ-tbn" secondAttribute="leading" id="R62-rF-ygp"/>
@@ -332,38 +339,41 @@
                                                             </constraints>
                                                         </view>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GFK-Yb-TYW">
-                                                            <rect key="frame" x="56" y="0.0" width="227" height="50"/>
+                                                            <rect key="frame" x="56" y="0.0" width="211" height="50"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="adsfdsafdsafdsf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqz-O6-wEv">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="227" height="29.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="211" height="29.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjL-eN-Nyz">
-                                                                    <rect key="frame" x="0.0" y="29.5" width="227" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="29.5" width="211" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpz-Qa-aPD">
-                                                            <rect key="frame" x="291" y="0.0" width="30" height="50"/>
-                                                            <state key="normal" title="X"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpz-Qa-aPD">
+                                                            <rect key="frame" x="275" y="0.0" width="38" height="50"/>
+                                                            <state key="normal" image="ic_thumbs_down"/>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lH-kV-wZt">
-                                                            <rect key="frame" x="329" y="0.0" width="30" height="50"/>
-                                                            <state key="normal" title="Y"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lH-kV-wZt">
+                                                            <rect key="frame" x="321" y="0.0" width="38" height="50"/>
+                                                            <state key="normal" image="ic_thumbs_up"/>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="FDN-Ys-oGB" secondAttribute="trailing" id="7Dv-0z-iBQ"/>
                                                 <constraint firstItem="bsz-jj-MrN" firstAttribute="leading" secondItem="Vhv-MC-y0L" secondAttribute="leadingMargin" id="BMk-87-TJn"/>
-                                                <constraint firstItem="bsz-jj-MrN" firstAttribute="top" secondItem="Vhv-MC-y0L" secondAttribute="topMargin" id="FuP-12-DBh"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="bsz-jj-MrN" secondAttribute="bottom" id="H2C-rE-fgm"/>
+                                                <constraint firstItem="bsz-jj-MrN" firstAttribute="top" secondItem="Vhv-MC-y0L" secondAttribute="topMargin" constant="4" id="FuP-12-DBh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="bsz-jj-MrN" secondAttribute="bottom" constant="4" id="H2C-rE-fgm"/>
+                                                <constraint firstItem="FDN-Ys-oGB" firstAttribute="leading" secondItem="Vhv-MC-y0L" secondAttribute="leadingMargin" id="HAm-W3-iFy"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="bsz-jj-MrN" secondAttribute="trailing" id="oJd-qA-v7e"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="FDN-Ys-oGB" secondAttribute="bottom" id="zGC-tR-tHF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -403,7 +413,7 @@
         <scene sceneID="s2H-bQ-tF9">
             <objects>
                 <navigationController id="ZMq-VA-tgi" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Vf-2u-SxX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3Vf-2u-SxX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -441,10 +451,10 @@
             </objects>
             <point key="canvasLocation" x="5175" y="-564"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Cool Tab Bar Controller-->
         <scene sceneID="wYP-7X-zxC">
             <objects>
-                <tabBarController id="9Ad-6R-f5g" sceneMemberID="viewController">
+                <tabBarController id="9Ad-6R-f5g" customClass="CoolTabBarController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="KVV-XN-8kl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -534,7 +544,7 @@
             <objects>
                 <navigationController id="3MD-ch-5F4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="downloads" id="Lj5-nA-ZT8"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aHI-eS-2Q8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="aHI-eS-2Q8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -744,7 +754,7 @@
             <objects>
                 <navigationController id="9aH-A2-bAe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="jgM-3X-54S"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lSx-0N-HW6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="lSx-0N-HW6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -883,7 +893,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vvd-2F-JXN" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZaN-gj-3MM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ZaN-gj-3MM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -899,5 +909,9 @@
     </scenes>
     <resources>
         <image name="coin_list" width="52" height="52"/>
+        <image name="ic_broom" width="38" height="38"/>
+        <image name="ic_family" width="61" height="43"/>
+        <image name="ic_thumbs_down" width="38" height="35"/>
+        <image name="ic_thumbs_up" width="38" height="35"/>
     </resources>
 </document>
