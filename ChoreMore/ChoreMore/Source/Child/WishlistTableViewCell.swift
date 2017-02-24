@@ -8,17 +8,25 @@
 
 import UIKit
 
+class TBSlider: UISlider {
+  override func trackRect(forBounds bounds: CGRect) -> CGRect {
+    return CGRect(x: 0, y: 0, width: bounds.size.width, height: 20)
+  }
+}
+
 class WishlistTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var itemNameLabel: UILabel!
-    @IBOutlet weak var itemCostLabel: UILabel!
-    @IBOutlet weak var itemImage: UIImageView!
-    
+  @IBOutlet weak var itemNameLabel: UILabel!
+  @IBOutlet weak var itemCostLabel: UILabel!
+  @IBOutlet weak var itemImage: UIImageView!
+  @IBOutlet weak var goalSlider: TBSlider!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+  override func awakeFromNib() {
+    super.awakeFromNib()
 
-        // Configure the view for the selected state
-    }
+    let image = UIImage(named: "goalThumb")
+    goalSlider.setThumbImage(image, for: .normal)
+    goalSlider.isUserInteractionEnabled = false
+  }
 
 }
