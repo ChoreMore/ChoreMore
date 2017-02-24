@@ -13,10 +13,9 @@ class WishListItemDetailViewController: UIViewController {
     @IBOutlet weak var itemNameTextField: UITextField!
     @IBOutlet weak var itemCostTextField: UITextField!
     @IBOutlet weak var selectImageButton: UIButton!
-    @IBOutlet weak var doneButton: UIButton!
     
     @IBAction func didTapDoneButton(_ sender: Any) {
-        
+
     }
 
     @IBAction func didTapSelectImageButton(_ sender: Any) {
