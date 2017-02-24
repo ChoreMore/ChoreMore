@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -203,7 +203,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="sUA-RV-Gaw"/>
                     <navigationItem key="navigationItem" title="Family" id="RAV-0v-bg7">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="nSi-8U-h7r">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nSi-8U-h7r">
                             <connections>
                                 <segue destination="fur-47-nzg" kind="presentation" id="YCG-ak-4sk"/>
                             </connections>
@@ -261,9 +261,13 @@
             <objects>
                 <navigationController id="RkE-Ei-Lft" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Chores" id="lLJ-hr-JcN"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eig-rh-vAM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Eig-rh-vAM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20392156862745098" green="0.56862745098039214" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="h7D-8i-vGV" kind="relationship" relationship="rootViewController" id="0Dc-bS-j63"/>
@@ -308,8 +312,8 @@
                                                                         <constraint firstAttribute="width" secondItem="S6P-IA-MDt" secondAttribute="height" multiplier="1:1" id="ZP0-c5-wbI"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jE0-Rs-2A8">
-                                                                    <rect key="frame" x="15.5" y="14.5" width="17.5" height="20.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jE0-Rs-2A8">
+                                                                    <rect key="frame" x="13.5" y="15" width="21" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -318,7 +322,6 @@
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstItem="jE0-Rs-2A8" firstAttribute="centerX" secondItem="zm3-vZ-tbn" secondAttribute="centerX" id="DBI-dL-6oL"/>
-                                                                <constraint firstItem="S6P-IA-MDt" firstAttribute="centerY" secondItem="zm3-vZ-tbn" secondAttribute="centerY" constant="1" id="M6q-7d-gfc"/>
                                                                 <constraint firstItem="S6P-IA-MDt" firstAttribute="leading" secondItem="zm3-vZ-tbn" secondAttribute="leading" id="R62-rF-ygp"/>
                                                                 <constraint firstItem="S6P-IA-MDt" firstAttribute="centerY" secondItem="zm3-vZ-tbn" secondAttribute="centerY" id="cX0-wH-2sY"/>
                                                                 <constraint firstAttribute="trailing" secondItem="S6P-IA-MDt" secondAttribute="trailing" id="d5H-Vs-lUd"/>
@@ -385,7 +388,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="hO9-rD-uOl"/>
                     <navigationItem key="navigationItem" title="Chores" id="1to-iP-cjH">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="kw4-tF-oEK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="kw4-tF-oEK">
                             <connections>
                                 <segue destination="ZMq-VA-tgi" kind="presentation" id="TDF-1W-1Mu"/>
                             </connections>
