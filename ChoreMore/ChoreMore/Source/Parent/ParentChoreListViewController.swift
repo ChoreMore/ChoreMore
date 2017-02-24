@@ -11,6 +11,10 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
     @IBOutlet weak var tableView: UITableView!
     
     var choreList: [[String:String]]?
+    
+    var pendingChores: [[String:String]]?
+    var completedChores: [[String:String]]?
+    
     let apiManager = APIManager()
 
     override func viewDidLoad() {
@@ -35,12 +39,21 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
         apiManager.chores { (choresResponse) in
             self.choreList = choresResponse.map({
                 let value = ($0["value"] as! Float)
-                
+                let status = ($0["status"] as! String)
                 return [
                     "name" : $0["description"] as! String,
                     "childName" : "Hadi",
-                    "amount" : "$\(value)"
+                    "amount" : "$\(value)",
+                    "status" : status
                 ]
+            })
+            
+            self.pendingChores = self.choreList?.filter({ (chore) -> Bool in
+                return chore["status"] != "COMPLETED"
+            })
+            
+            self.completedChores = self.choreList?.filter({ (chore) -> Bool in
+                return chore["status"] == "COMPLETED"
             })
             
             DispatchQueue.main.async {
@@ -50,24 +63,53 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let count = self.choreList?.count else {
-            return 0
+//        guard let count = self.choreList?.count else {
+//            return 0
+//        }
+
+        if section == 0 {
+            guard let count = self.pendingChores?.count else {
+                return 0
+            }
+            
+            return count
+        }
+        else {
+            guard let count = self.completedChores?.count else {
+                return 0
+            }
+            
+            return count
         }
         
-        return count
     }
 
+    public func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let choreCell = tableView.dequeueReusableCell(withIdentifier: "ParentChore") as! ChoreTableViewCell
         choreCell.delegate = self
         
-        guard let chore = self.choreList?[indexPath.item] else {
-            return UITableViewCell()
+        if indexPath.section == 0 {
+            guard let chore = self.pendingChores?[indexPath.item] else {
+                return UITableViewCell()
+            }
+            
+            choreCell.choreNameLabel.text = chore["name"]
+            choreCell.choreChildNameLabel.text = chore["childName"]
+            choreCell.choreValueLabel.text = chore["amount"]
         }
-        
-        choreCell.choreNameLabel.text = chore["name"]
-        choreCell.choreChildNameLabel.text = chore["childName"]
-        choreCell.choreValueLabel.text = chore["amount"]
+        else {
+            guard let chore = self.completedChores?[indexPath.item] else {
+                return UITableViewCell()
+            }
+            
+            choreCell.choreNameLabel.text = chore["name"]
+            choreCell.choreChildNameLabel.text = chore["childName"]
+            choreCell.choreValueLabel.text = chore["amount"]
+        }
         
         return choreCell
     }
