@@ -8,10 +8,19 @@ import UIKit
 
 class ParentChoreListViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var choreList: [String]?
+    var choreList: [[String:String]]?
 
     override func viewDidLoad() {
-        self.choreList = ["Clean dishes", "Make bed"]
+        self.choreList = [
+            [
+                "name" : "Clean dishes",
+                "childName" : "Hadi"
+            ],
+            [
+                "name" : "Make bed",
+                "childName" : "Kamal"
+            ]
+        ]
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,7 +38,8 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
             return UITableViewCell()
         }
         
-        choreCell.choreNameLabel.text = chore
+        choreCell.choreNameLabel.text = chore["name"]
+        choreCell.choreChildNameLabel.text = chore["childName"]
         
         return choreCell
     }
