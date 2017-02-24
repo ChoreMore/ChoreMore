@@ -8,4 +8,8 @@ import UIKit
 
 class JoinFamilyViewController : UIViewController {
 
+    @IBOutlet weak var familyCodeTextField: UITextField!
+    @IBOutlet weak var kidCodeTextField: UITextField!
+    @IBOutlet weak var joinFamilyButton: UIButton!
+    
 }

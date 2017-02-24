@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220C8CE21E5FE86000E153CF /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8CE11E5FE86000E153CF /* WishListViewController.swift */; };
+		220C8CE41E5FE89E00E153CF /* WishListItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8CE31E5FE89E00E153CF /* WishListItemDetailViewController.swift */; };
+		220C8CE61E5FEB2600E153CF /* ChoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8CE51E5FEB2600E153CF /* ChoreTableViewCell.swift */; };
+		220C8CE81E5FEB4D00E153CF /* WishlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8CE71E5FEB4D00E153CF /* WishlistTableViewCell.swift */; };
 		40CFE04289619687A6DFF546 /* FamilyMemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE08D93AF99BA67A5860C /* FamilyMemberDetailViewController.swift */; };
 		40CFE130DE6856F74A9EC460 /* ChoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE6D1E4155C1D63E2F517 /* ChoreListViewController.swift */; };
 		40CFE4A8853099B583543413 /* ParentChoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE9372B6C93CFEE576B0E /* ParentChoreListViewController.swift */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220C8CE11E5FE86000E153CF /* WishListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
+		220C8CE31E5FE89E00E153CF /* WishListItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListItemDetailViewController.swift; sourceTree = "<group>"; };
+		220C8CE51E5FEB2600E153CF /* ChoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoreTableViewCell.swift; sourceTree = "<group>"; };
+		220C8CE71E5FEB4D00E153CF /* WishlistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistTableViewCell.swift; sourceTree = "<group>"; };
 		40CFE08D93AF99BA67A5860C /* FamilyMemberDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyMemberDetailViewController.swift; sourceTree = "<group>"; };
 		40CFE4C8E9A6EE681A97D749 /* JoinFamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinFamilyViewController.swift; sourceTree = "<group>"; };
 		40CFE61AE41FBBEC79108C88 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +73,11 @@
 			isa = PBXGroup;
 			children = (
 				40CFE4C8E9A6EE681A97D749 /* JoinFamilyViewController.swift */,
+				220C8CE71E5FEB4D00E153CF /* WishlistTableViewCell.swift */,
 				40CFE6D1E4155C1D63E2F517 /* ChoreListViewController.swift */,
+				220C8CE51E5FEB2600E153CF /* ChoreTableViewCell.swift */,
+				220C8CE11E5FE86000E153CF /* WishListViewController.swift */,
+				220C8CE31E5FE89E00E153CF /* WishListItemDetailViewController.swift */,
 			);
 			path = Child;
 			sourceTree = "<group>";
@@ -190,14 +202,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				40CFEB6D051A10A8B6BCF035 /* ViewController.swift in Sources */,
+				220C8CE21E5FE86000E153CF /* WishListViewController.swift in Sources */,
 				40CFE55A69DE433AFCE8D459 /* AppDelegate.swift in Sources */,
+				220C8CE61E5FEB2600E153CF /* ChoreTableViewCell.swift in Sources */,
 				40CFE84D7C363E538AF461C4 /* LoginViewController.swift in Sources */,
 				40CFE94DD409604294620749 /* JoinFamilyViewController.swift in Sources */,
 				40CFE130DE6856F74A9EC460 /* ChoreListViewController.swift in Sources */,
 				40CFE4A8853099B583543413 /* ParentChoreListViewController.swift in Sources */,
 				40CFEA80FB252B2EB53CBC87 /* ChoreDetailViewController.swift in Sources */,
 				40CFEEDCE2365000E175F626 /* ManageFamilyViewController.swift in Sources */,
+				220C8CE81E5FEB4D00E153CF /* WishlistTableViewCell.swift in Sources */,
 				40CFE04289619687A6DFF546 /* FamilyMemberDetailViewController.swift in Sources */,
+				220C8CE41E5FE89E00E153CF /* WishListItemDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +373,7 @@
 				E12CE9681E5FCA2C008D1A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
