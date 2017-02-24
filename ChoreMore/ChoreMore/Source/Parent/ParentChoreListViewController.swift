@@ -16,11 +16,13 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
         self.choreList = [
             [
                 "name" : "Clean dishes",
-                "childName" : "Hadi"
+                "childName" : "Hadi",
+                "amount" : "4$"
             ],
             [
                 "name" : "Make bed",
-                "childName" : "Kamal"
+                "childName" : "Kamal",
+                "amount" : "2$"
             ]
         ]
     }
@@ -43,6 +45,7 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
         
         choreCell.choreNameLabel.text = chore["name"]
         choreCell.choreChildNameLabel.text = chore["childName"]
+        choreCell.choreValueLabel.text = chore["amount"]
         
         return choreCell
     }

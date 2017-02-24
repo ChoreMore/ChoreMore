@@ -385,6 +385,7 @@
                                         <connections>
                                             <outlet property="choreChildNameLabel" destination="DjL-eN-Nyz" id="Oy5-E9-0hd"/>
                                             <outlet property="choreNameLabel" destination="iqz-O6-wEv" id="G2M-T2-NWX"/>
+                                            <outlet property="choreValueLabel" destination="jE0-Rs-2A8" id="J4k-Hl-OXK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
