@@ -20,6 +20,7 @@
 		40CFEA80FB252B2EB53CBC87 /* ChoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFEAF5178957B9BC8B9650 /* ChoreDetailViewController.swift */; };
 		40CFEB6D051A10A8B6BCF035 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE6698F14E47CB378A776 /* ViewController.swift */; };
 		40CFEEDCE2365000E175F626 /* ManageFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFEBDC8BB1BB81B4AA8246 /* ManageFamilyViewController.swift */; };
+		4330186E745887FE5154EB0D /* Pods_ChoreMore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8146AD26CA64AD2A3943E97A /* Pods_ChoreMore.framework */; };
 		E12CE95D1E5FCA2C008D1A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12CE95B1E5FCA2C008D1A1D /* Main.storyboard */; };
 		E12CE95F1E5FCA2C008D1A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12CE95E1E5FCA2C008D1A1D /* Assets.xcassets */; };
 		E12CE9621E5FCA2C008D1A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12CE9601E5FCA2C008D1A1D /* LaunchScreen.storyboard */; };
@@ -39,6 +40,9 @@
 		40CFEAF5178957B9BC8B9650 /* ChoreDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoreDetailViewController.swift; sourceTree = "<group>"; };
 		40CFEBDC8BB1BB81B4AA8246 /* ManageFamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageFamilyViewController.swift; sourceTree = "<group>"; };
 		40CFEFB3A64353A267538346 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A57E10C78F952560CC8479B /* Pods-ChoreMore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChoreMore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChoreMore/Pods-ChoreMore.debug.xcconfig"; sourceTree = "<group>"; };
+		8146AD26CA64AD2A3943E97A /* Pods_ChoreMore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChoreMore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E7994B468711669B488F30 /* Pods-ChoreMore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChoreMore.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChoreMore/Pods-ChoreMore.release.xcconfig"; sourceTree = "<group>"; };
 		E12CE9541E5FCA2C008D1A1D /* ChoreMore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChoreMore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12CE95C1E5FCA2C008D1A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E12CE95E1E5FCA2C008D1A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4330186E745887FE5154EB0D /* Pods_ChoreMore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +106,22 @@
 			path = Parent;
 			sourceTree = "<group>";
 		};
+		A710979BA0E39A4342B6ABD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A57E10C78F952560CC8479B /* Pods-ChoreMore.debug.xcconfig */,
+				88E7994B468711669B488F30 /* Pods-ChoreMore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E12CE94B1E5FCA2C008D1A1D = {
 			isa = PBXGroup;
 			children = (
 				E12CE9561E5FCA2C008D1A1D /* ChoreMore */,
 				E12CE9551E5FCA2C008D1A1D /* Products */,
+				A710979BA0E39A4342B6ABD1 /* Pods */,
+				F9D0996A19E7E7448A8026D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +145,14 @@
 			path = ChoreMore;
 			sourceTree = "<group>";
 		};
+		F9D0996A19E7E7448A8026D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8146AD26CA64AD2A3943E97A /* Pods_ChoreMore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E12CE9661E5FCA2C008D1A1D /* Build configuration list for PBXNativeTarget "ChoreMore" */;
 			buildPhases = (
+				FCFA2E99269A8FF82D730A3C /* [CP] Check Pods Manifest.lock */,
 				E12CE9501E5FCA2C008D1A1D /* Sources */,
 				E12CE9511E5FCA2C008D1A1D /* Frameworks */,
 				E12CE9521E5FCA2C008D1A1D /* Resources */,
+				DD3B7CA972B5B3C788E5C39E /* [CP] Embed Pods Frameworks */,
+				9C055B3E200E80DDF1FCC8FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +222,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C055B3E200E80DDF1FCC8FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChoreMore/Pods-ChoreMore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD3B7CA972B5B3C788E5C39E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChoreMore/Pods-ChoreMore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCFA2E99269A8FF82D730A3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E12CE9501E5FCA2C008D1A1D /* Sources */ = {
@@ -332,6 +407,7 @@
 		};
 		E12CE9671E5FCA2C008D1A1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A57E10C78F952560CC8479B /* Pods-ChoreMore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChoreMore/Info.plist;
@@ -344,6 +420,7 @@
 		};
 		E12CE9681E5FCA2C008D1A1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88E7994B468711669B488F30 /* Pods-ChoreMore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChoreMore/Info.plist;

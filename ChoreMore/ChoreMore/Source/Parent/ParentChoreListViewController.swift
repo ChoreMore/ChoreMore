@@ -11,7 +11,7 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
     var choreList: [String]?
 
     override func viewDidLoad() {
-        self.choreList = ["haha", "haha22"]
+        self.choreList = ["Clean dishes", "Make bed"]
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,7 +23,15 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "ParentChore")!
+        let choreCell = tableView.dequeueReusableCell(withIdentifier: "ParentChore") as! ChoreTableViewCell
+        
+        guard let chore = self.choreList?[indexPath.item] else {
+            return UITableViewCell()
+        }
+        
+        choreCell.choreNameLabel.text = chore
+        
+        return choreCell
     }
     
     @IBAction func unwindToParentChoreList(segue: UIStoryboardSegue) {

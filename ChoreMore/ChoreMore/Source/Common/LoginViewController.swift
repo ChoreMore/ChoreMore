@@ -5,7 +5,15 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 class LoginViewController : UIViewController {
+
+  @IBOutlet weak var username: UITextField!
+  @IBOutlet weak var password: UITextField!
+
+  @IBAction func login(_ sender: Any) {
+
+  }
 
 }
