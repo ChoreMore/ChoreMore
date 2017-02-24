@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol ChoreCellDelegate : class {
+    func didTapAccept(cell: ChoreTableViewCell)
+    func didTapReject(cell: ChoreTableViewCell)
+}
+
 class ChoreTableViewCell: UITableViewCell {
 
     @IBOutlet weak var choreNameLabel: UILabel!
@@ -16,8 +21,18 @@ class ChoreTableViewCell: UITableViewCell {
     @IBOutlet weak var choreStatusLabel: UILabel!
     @IBOutlet weak var choreActionButton: UIButton!
     
+    weak var delegate: ChoreCellDelegate?
+    
     @IBAction func didTapChoreActionButton(_ sender: Any) {
         
+    }
+    
+    @IBAction func didTapAccept(_ sender: UIButton) {
+        self.delegate?.didTapAccept(cell: self)
+    }
+    
+    @IBAction func didTapReject(_ sender: UIButton) {
+        self.delegate?.didTapReject(cell: self)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

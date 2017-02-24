@@ -26,6 +26,9 @@
 		E12CE95F1E5FCA2C008D1A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12CE95E1E5FCA2C008D1A1D /* Assets.xcassets */; };
 		E12CE9621E5FCA2C008D1A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12CE9601E5FCA2C008D1A1D /* LaunchScreen.storyboard */; };
 		E12CE96A1E600222008D1A1D /* FamilyMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CE9691E600222008D1A1D /* FamilyMemberCell.swift */; };
+		E17BE17C1E604A930089B4AD /* CoolTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17BE17B1E604A930089B4AD /* CoolTabBar.swift */; };
+		E17BE17F1E605D550089B4AD /* WawaSC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E17BE1791E6044240089B4AD /* WawaSC-Regular.otf */; };
+		E17BE1811E6065590089B4AD /* CoolSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17BE1801E6065590089B4AD /* CoolSegues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		E12CE9611E5FCA2C008D1A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E12CE9631E5FCA2C008D1A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E12CE9691E600222008D1A1D /* FamilyMemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyMemberCell.swift; sourceTree = "<group>"; };
+		E17BE1791E6044240089B4AD /* WawaSC-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WawaSC-Regular.otf"; sourceTree = "<group>"; };
+		E17BE17B1E604A930089B4AD /* CoolTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolTabBar.swift; sourceTree = "<group>"; };
+		E17BE1801E6065590089B4AD /* CoolSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolSegues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 		40CFEBD5079B5B5B6AF73217 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E17BE17A1E604A7B0089B4AD /* Random */,
 				220C8CE51E5FEB2600E153CF /* ChoreTableViewCell.swift */,
 				40CFE61AE41FBBEC79108C88 /* LoginViewController.swift */,
 				27A12C021E5FFAC00086E473 /* APIManager.swift */,
@@ -142,6 +149,7 @@
 		E12CE9561E5FCA2C008D1A1D /* ChoreMore */ = {
 			isa = PBXGroup;
 			children = (
+				E17BE1791E6044240089B4AD /* WawaSC-Regular.otf */,
 				E12CE95B1E5FCA2C008D1A1D /* Main.storyboard */,
 				E12CE95E1E5FCA2C008D1A1D /* Assets.xcassets */,
 				E12CE9601E5FCA2C008D1A1D /* LaunchScreen.storyboard */,
@@ -149,6 +157,15 @@
 				40CFE273EE5F29523FF58FB3 /* Source */,
 			);
 			path = ChoreMore;
+			sourceTree = "<group>";
+		};
+		E17BE17A1E604A7B0089B4AD /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				E17BE17B1E604A930089B4AD /* CoolTabBar.swift */,
+				E17BE1801E6065590089B4AD /* CoolSegues.swift */,
+			);
+			name = Random;
 			sourceTree = "<group>";
 		};
 		F9D0996A19E7E7448A8026D3 /* Frameworks */ = {
@@ -221,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17BE17F1E605D550089B4AD /* WawaSC-Regular.otf in Resources */,
 				E12CE9621E5FCA2C008D1A1D /* LaunchScreen.storyboard in Resources */,
 				E12CE95F1E5FCA2C008D1A1D /* Assets.xcassets in Resources */,
 				E12CE95D1E5FCA2C008D1A1D /* Main.storyboard in Resources */,
@@ -286,9 +304,11 @@
 				E12CE96A1E600222008D1A1D /* FamilyMemberCell.swift in Sources */,
 				220C8CE21E5FE86000E153CF /* WishListViewController.swift in Sources */,
 				40CFE55A69DE433AFCE8D459 /* AppDelegate.swift in Sources */,
+				E17BE17C1E604A930089B4AD /* CoolTabBar.swift in Sources */,
 				220C8CE61E5FEB2600E153CF /* ChoreTableViewCell.swift in Sources */,
 				40CFE84D7C363E538AF461C4 /* LoginViewController.swift in Sources */,
 				40CFE94DD409604294620749 /* JoinFamilyViewController.swift in Sources */,
+				E17BE1811E6065590089B4AD /* CoolSegues.swift in Sources */,
 				27A12C031E5FFAC00086E473 /* APIManager.swift in Sources */,
 				40CFE130DE6856F74A9EC460 /* ChoreListViewController.swift in Sources */,
 				40CFE4A8853099B583543413 /* ParentChoreListViewController.swift in Sources */,

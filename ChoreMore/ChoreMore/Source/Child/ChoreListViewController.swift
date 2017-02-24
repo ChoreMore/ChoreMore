@@ -6,7 +6,7 @@
 import Foundation
 import UIKit
 
-class ChoreListViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ChoreListViewController : UIViewController, UITableViewDataSource, UITableViewDelegate, ChoreCellDelegate {
     
     var choreList: [String]?
     
@@ -30,6 +30,8 @@ class ChoreListViewController : UIViewController, UITableViewDataSource, UITable
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let choreCell = tableView.dequeueReusableCell(withIdentifier: "choreCell") as! ChoreTableViewCell
         
+        choreCell.delegate = self
+        
         guard let chore = self.choreList?[indexPath.item] else {
             return UITableViewCell()
         }
@@ -40,6 +42,14 @@ class ChoreListViewController : UIViewController, UITableViewDataSource, UITable
     }
     
     @IBAction func unwindToKidChoreList(segue: UIStoryboardSegue) {
+        
+    }
+    
+    func didTapAccept(cell: ChoreTableViewCell) {
+        
+    }
+    
+    func didTapReject(cell: ChoreTableViewCell) {
         
     }
 
