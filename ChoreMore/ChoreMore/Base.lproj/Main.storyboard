@@ -104,7 +104,7 @@
             </objects>
             <point key="canvasLocation" x="2716" y="202"/>
         </scene>
-        <!--Manage Family-->
+        <!--Family-->
         <scene sceneID="3En-QK-3mT">
             <objects>
                 <viewController id="4qR-D4-pU7" customClass="ManageFamilyViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
@@ -130,7 +130,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="sUA-RV-Gaw"/>
-                    <navigationItem key="navigationItem" title="Manage Family" id="RAV-0v-bg7">
+                    <navigationItem key="navigationItem" title="Family" id="RAV-0v-bg7">
                         <barButtonItem key="rightBarButtonItem" title="+" id="nSi-8U-h7r">
                             <connections>
                                 <segue destination="fur-47-nzg" kind="presentation" id="YCG-ak-4sk"/>
@@ -158,7 +158,7 @@
             </objects>
             <point key="canvasLocation" x="4434" y="202"/>
         </scene>
-        <!--Add Child-->
+        <!--Child-->
         <scene sceneID="BTO-vy-7Bl">
             <objects>
                 <viewController id="BEN-oc-CMW" customClass="FamilyMemberDetailViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
@@ -171,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Child" id="cWZ-UF-HAr">
+                    <navigationItem key="navigationItem" title="Child" id="cWZ-UF-HAr">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="wI6-Nd-ocF">
                             <connections>
                                 <segue destination="fAf-Kx-Kxm" kind="unwind" unwindAction="unwindToManageFamilyWithSegue:" id="p0d-3i-JyF"/>
@@ -255,7 +255,7 @@
             </objects>
             <point key="canvasLocation" x="4433" y="-563"/>
         </scene>
-        <!--Add Chore-->
+        <!--Chore-->
         <scene sceneID="NIw-Mb-Nsi">
             <objects>
                 <viewController id="WVH-uP-o2I" customClass="ChoreDetailViewController" customModule="ChoreMore" customModuleProvider="target" sceneMemberID="viewController">
@@ -268,7 +268,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Chore" id="kLv-oY-2dl">
+                    <navigationItem key="navigationItem" title="Chore" id="kLv-oY-2dl">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="c9e-Xa-Zh0">
                             <connections>
                                 <segue destination="UeY-r7-DJb" kind="unwind" unwindAction="unwindToParentChoreListWithSegue:" id="r1u-5P-fgZ"/>
