@@ -130,7 +130,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="sUA-RV-Gaw"/>
-                    <navigationItem key="navigationItem" id="RAV-0v-bg7"/>
+                    <navigationItem key="navigationItem" id="RAV-0v-bg7">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="nSi-8U-h7r"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhN-kQ-IkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,7 +181,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="hO9-rD-uOl"/>
-                    <navigationItem key="navigationItem" id="1to-iP-cjH"/>
+                    <navigationItem key="navigationItem" id="1to-iP-cjH">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="kw4-tF-oEK"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xcw-uc-wuk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
