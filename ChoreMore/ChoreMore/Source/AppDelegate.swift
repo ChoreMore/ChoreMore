@@ -31,6 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().barTintColor = UIColor(colorLiteralRed: 52.0/255, green: 145.0/255, blue: 51.0/255, alpha: 1)
         UITabBar.appearance().tintColor = UIColor.white
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.green], for: .normal)
+        
+        UITableViewHeaderFooterView.appearance().tintColor = UIColor(colorLiteralRed: 52.0/255, green: 145.0/255, blue: 51.0/255, alpha: 1)
+        
+        UILabel.appearance(whenContainedInInstancesOf: [UITableViewHeaderFooterView.self]).textColor = .white
+        
         return true
     }
 

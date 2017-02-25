@@ -18,20 +18,6 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
     let apiManager = APIManager()
 
     override func viewDidLoad() {
-//        self.choreList = [
-//            [
-//                "name" : "Clean dishes",
-//                "childName" : "Hadi",
-//                "amount" : "$4"
-//            ],
-//            [
-//                "name" : "Make bed",
-//                "childName" : "Kamal",
-//                "amount" : "$2"
-//            ]
-//        ]
-        
-
         createChoreModel()
     }
     
@@ -43,7 +29,7 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
                 return [
                     "name" : $0["description"] as! String,
                     "childName" : "Hadi",
-                    "amount" : "$\(value)",
+                    "amount" : "$\(String(format: "%.0f", value))",
                     "status" : status
                 ]
             })
@@ -63,10 +49,6 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        guard let count = self.choreList?.count else {
-//            return 0
-//        }
-
         if section == 0 {
             guard let count = self.pendingChores?.count else {
                 return 0
@@ -112,6 +94,10 @@ class ParentChoreListViewController : UIViewController, UITableViewDataSource, U
         }
         
         return choreCell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return section == 0 ? "Pending" : "Completed"
     }
     
     @IBAction func unwindToParentChoreList(segue: UIStoryboardSegue) {
