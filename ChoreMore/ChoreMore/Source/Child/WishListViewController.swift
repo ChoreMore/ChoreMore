@@ -17,7 +17,7 @@ class WishListViewController: UIViewController, UITableViewDataSource, UITableVi
   @IBOutlet weak var tableView: UITableView!
 
   override func viewDidLoad() {
-    self.wishList = [("Playstation", 200.00, "xbox"), ("Visit Luna Park", 50.00, "luna")]
+    self.wishList = [("Playstation", 200.00, "playstation"), ("Visit Luna Park", 50.00, "luna")]
     tableView.tableFooterView = UIView()
   }
 
